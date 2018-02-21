@@ -49,8 +49,8 @@ def find_by_xpath(locator):
     element = WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, locator)))
     return element
 
-find_by_xpath('//input[@id = "l"]').send_keys("stage01")          
-find_by_xpath('//input[@id = "txtpw"]').send_keys("stage!34")          
+find_by_xpath('//input[@id = "l"]').send_keys("")          
+find_by_xpath('//input[@id = "txtpw"]').send_keys("")          
 find_by_xpath('//input[@id = "e"]').click()
 find_by_xpath('//a[@onclick = "openForecastFV()"]').click()
 #driver.find_element_by_css_selector("input[onclick*='openForecastFV']").click()
